@@ -1,7 +1,6 @@
-package com.pastcampus.javaoop.service;
+package com.pastcampus.springpractice.service;
 
-import com.pastcampus.javaoop.logic.BubbleSort;
-import com.pastcampus.javaoop.logic.JavaSort;
+import com.pastcampus.springpractice.logic.JavaSort;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

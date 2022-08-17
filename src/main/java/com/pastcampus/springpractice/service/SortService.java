@@ -1,7 +1,8 @@
-package com.pastcampus.javaoop.service;
+package com.pastcampus.springpractice.service;
 
-import com.pastcampus.javaoop.logic.JavaSort;
-import com.pastcampus.javaoop.logic.Sort;
+import com.pastcampus.springpractice.logic.Sort;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -11,11 +12,12 @@ import java.util.List;
  * author         : yunji
  * date           : 22. 8. 16.
  */
+@Service
 public class SortService {
 
     private final Sort<String> sort;
 
-    public SortService(Sort<String> sort){
+    public SortService(@Qualifier("bubbleSort") Sort<String> sort){
         this.sort =sort;
         System.out.println("구현체는 " + sort.getClass().getName());
     }

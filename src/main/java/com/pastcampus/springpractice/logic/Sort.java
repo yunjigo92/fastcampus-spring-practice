@@ -1,4 +1,4 @@
-package com.pastcampus.javaoop.logic;
+package com.pastcampus.springpractice.logic;
 
 import java.util.List;
 
@@ -8,6 +8,7 @@ import java.util.List;
  * author         : yunji
  * date           : 22. 8. 16.
  */
+
 public interface Sort <T extends Comparable<T>>{
     List<T> sort(List<T> list);
 }

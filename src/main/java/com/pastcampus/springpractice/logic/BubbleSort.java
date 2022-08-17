@@ -1,4 +1,6 @@
-package com.pastcampus.javaoop.logic;
+package com.pastcampus.springpractice.logic;
+
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,6 +11,7 @@ import java.util.List;
  * author         : yunji
  * date           : 22. 8. 12.
  */
+@Component
 public class BubbleSort <T extends Comparable<T>> implements Sort<T>{
     @Override
     public List<T> sort(List<T> list) {
