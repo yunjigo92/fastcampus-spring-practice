@@ -17,7 +17,7 @@ public class SortService {
 
     private final Sort<String> sort;
 
-    public SortService(@Qualifier("bubbleSort") Sort<String> sort){
+    public SortService(@Qualifier("javaSort") Sort<String> sort){
         this.sort =sort;
         System.out.println("구현체는 " + sort.getClass().getName());
     }

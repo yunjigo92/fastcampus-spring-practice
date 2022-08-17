@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class SortServiceTest {
 
-    private SortService sort = new SortService(new JavaSort<String>());
+    private final SortService sort = new SortService(new JavaSort<String>());
 
     @Test
     void test(){
